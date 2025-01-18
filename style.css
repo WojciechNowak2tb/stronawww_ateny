@@ -1,0 +1,101 @@
+body {background-color: #F5F5DC; font-family: 'Segoe UI'; color: #003366;}
+
+header {height: 200px; font-size: xx-large; text-align: center; background-color: #DAA520; justify-content: center; align-items: center; display: flex; border: 10px solid #003366; animation: logo 4s; margin-bottom: 10px;}
+
+
+table, td, tr, th {border: 2px solid ; border-collapse: collapse;}
+table {margin-left: 25px; margin-right: 1px;}
+
+iframe {width: 100%; border-width: 0px; height: 500px;}
+aside {border: #003366 solid 10px;}
+section {width: 30%; margin-top: 10px; float: left;}
+figure {clear: both; max-width: 960px; height: 600px;}
+#middle {margin-left: 5%; margin-right: 5%;}
+.menu, nav {animation-name: menu; animation-duration: 3s;}
+.caption {margin-left: 10%; clear: both;}
+.gallery {animation: galeria1 15s 999999;}
+
+
+
+
+@keyframes galeria1 {
+  0% {background-image: url(media/souvlaki.png);} 
+  25% {background-image: url(media/loukoumades.png);}
+  50% {background-image: url(media/moussaka.png);}
+  75% {background-image: url(media/salad.png);}
+  100% {background-image: url(media/souvlaki.png);}
+}
+
+@keyframes galeria2 {
+  0% {background-image: url(media/souvlaki2.png);} 
+  25% {background-image: url(media/loukoumades2.png);}
+  50% {background-image: url(media/moussaka2.png);}
+  75% {background-image: url(media/salad2.png);}
+  100% {background-image: url(media/souvlaki2.png);}
+}
+
+@keyframes galeria3 {
+  0% {background-image: url(media/souvlaki3.png);} 
+  25% {background-image: url(media/loukoumades3.png);}
+  50% {background-image: url(media/moussaka3.png);}
+  75% {background-image: url(media/salad3.png);}
+  100% {background-image: url(media/souvlaki3.png);}
+}
+
+@media screen and (max-width: 1200px){
+  .tablet {float: none; width: 100%; clear: both;}
+  #middle {margin-right: 0;}
+  section {width: 47.5%;}
+  .gallery {animation: galeria2 15s 999999;}
+  figure {clear: both; max-width: 480px; height: 300px;}
+}
+
+@media screen and (max-width: 600px){
+  .tablet {float: none; width: 100%;}
+  .telefon {float: none;}
+  #middle {margin: 0;}
+  section {width: 100%; float: none; margin: 0;}
+  .gallery {animation: galeria3 15s 999999;}
+  figure {clear: both; max-width: 240px; height: 150px;}
+}
+
+
+
+
+
+@keyframes logo {
+  from {border: #F5F5DC solid 10px; background-color: #F5F5DC; color: #F5F5DC;}
+  to {border: 10px solid #003366; background-color: #DAA520;}
+}
+
+@keyframes menu {
+  from {background-color: #F5F5DC; color: #F5F5DC;}
+  to {background-color: #D2B48C;}
+}
+
+/* Add a black background color to the top navigation */
+.topnav {background-color: #D2B48C; overflow: hidden;}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {float: left; display: block; color: #003366; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {background-color: #003366; color: #DAA520;}
+  
+  /* Add an active class to highlight the current page */
+.topnav a#active {background-color: #DAA520; color: #003366;}
+  
+  /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {display: none;}
+
+/* When the screen is less than 1200 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1200px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {float: right; display: block;}}
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 1200px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {position: absolute; right: 0; top: 0;}
+    .topnav.responsive a {float: none; display: block; text-align: left;}}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateny</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+<div class="tekst">
+    <a href="#mapa">Mapa</a> |
+    <a href="#widok">Film</a> |
+    <a href="#muzyka">Muzyka</a> |
+    <a href="#ankieta">Ankieta</a>
+</div>
+
+<h1 class="tekst" id="mapa">Mapa Aten</h1>
+<div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50310.6053691065!2d23.69713994982018!3d37.99083001430717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2sAteny%2C%20Grecja!5e0!3m2!1spl!2spl!4v1731336869351!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+<h1 class="tekst" id="widok">Ateny z lotu ptaka</h1>
+<div class="film"><iframe id="film" src="https://www.youtube-nocookie.com/embed/wa1fa5-EnlI?si=9SCXVsF3Mc8rR6vN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<h1 class="tekst" id="muzyka">Najstarsza grecka piosenka (z I/II w. n.e.)</h1>
+<div><audio controls class="muzyka">
+    <source src="media/stara_piosenka.ogg" type="audio/ogg">
+    Twoja przeglądarka nie obsługuje elementu audio. Kliknij <a href="https://en.wikipedia.org/wiki/File:%CE%9F_%CE%95%CF%80%CE%B9%CF%84%CE%AC%CF%86%CE%B9%CE%BF%CF%82_%CF%84%CE%BF%CF%85_%CE%A3%CE%B5%E1%BF%96%CE%BA%CE%B9%CE%BB%CE%BF%CF%85_-_Epitaph_of_Seikilos.ogg">tutaj</a> żeby pobrać plik.
+</audio></div>
+      
+<h1 class="tekst" id="ankieta">Ankieta</h1>
+<form action="mailto:mail.wlasciciela@mail.pl" method="POST">
+    <label for="name">Imię: </label><br><input type="text" id="name" name="name" required><br>
+
+    <label for="email">Adres email: </label><br><input type="email" id="email" name="email" required><br>
+
+    <label>Która część była najlepsza?</label><br>
+    <input type="radio" id="sg" name="part" value="Strona główna" required><label for="sg">Strona główna</label><br>
+    <input type="radio" id="h" name="part" value="Historia"><label for="h">Historia</label><br>
+    <input type="radio" id="ks" name="part" value="Kultura i sztuka"><label for="ks">Kultura i sztuka</label><br>
+    <input type="radio" id="kg" name="part" value="Kuchnia grecka"><label for="kg">Kuchnia grecka</label><br>
+    <input type="radio" id="g" name="part" value="Galeria"><label for="g">Galeria</label><br>
+    <input type="radio" id="w" name="part" value="Więcej"><label for="w">Więcej</label><br>
+
+    <label for="opinia">Co można poprawić/zmienić?</label><br><textarea id="opinia" name="opinia" placeholder="Wpisz swoje uwagi tutaj..." rows="5" cols="50" required></textarea><br>
+
+    <input type="reset" value="Wyczyść" class="guzik">
+    <input type="submit" value="Wyślij" class="guzik">
+</form>
+
+<ul class="tekst"><li><b>Dowiedz się więcej: </b><a href="https://www.kochajacgrecje.pl/" target="_blank">Link</a></li></ul>
+
+</body>
+</html>
